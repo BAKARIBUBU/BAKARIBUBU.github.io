@@ -1,53 +1,81 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Odoo Auto Service System | Bakari Bubu</title>
+  <title>Odoo Auto Service | Bakari Bubu</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
   <!-- Navbar -->
-  <nav class="fixed w-full z-20 top-0 bg-gray-900/80 backdrop-blur-md border-b border-gray-700">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-      <a href="../index.html" class="text-2xl font-bold text-white">BAKARI BUBU</a>
-      <div>
-        <a href="https://bakaribubu.github.io" class="px-4 py-2 bg-blue-600 rounded hover:bg-blue-500 transition">Home</a>
+  <nav class="fixed w-full z-50 top-0 bg-gray-900/80 backdrop-blur-md border-b border-gray-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center space-x-3">
+          <img src="../images/profile.jpg" alt="Profile" class="w-10 h-10 rounded-full border-2 border-blue-500">
+          <a href="../index.html" class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+            BAKARI BUBU
+          </a>
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="../index.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md transition">Home</a>
+          <a href="../contact.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md transition">Contact</a>
+        </div>
       </div>
     </div>
   </nav>
 
-  <!-- Project Detail Section -->
-  <section class="pt-24 px-4">
-    <div class="max-w-4xl mx-auto">
+  <!-- Project Details -->
+  <section class="pt-32 px-4">
+    <div class="max-w-4xl mx-auto glass-card p-8 rounded-2xl border border-gray-700">
       <h1 class="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
         Odoo Auto Service System
       </h1>
-      <p class="text-lg md:text-xl text-gray-300 mb-6">
-        This project is a comprehensive custom solution built on Odoo 17, designed to streamline the entire automotive service lifecycle. It transforms sales orders into full-fledged workshop orders with a smart button, automating vehicle check-in and seamlessly replicating inspection checklists into the dispatch phase. The system integrates Odoo modules such as Sales, Fleet, and Accounting to provide a unified workflow. Key features include:
-      </p>
-      <ul class="list-disc list-inside text-gray-300 mb-6">
-        <li>Automated conversion of sales orders to workshop orders.</li>
-        <li>Seamless transfer of vehicle checklists from check-in to dispatch.</li>
-        <li>Dynamic PDF reporting with formatted check-in/out times and detailed service data.</li>
-        <li>Integration with partner modules for enhanced data consistency.</li>
-        <li>Robust error handling and security access for reliable operations.</li>
-      </ul>
-      <p class="text-gray-300 mb-6">
-        Built using Python, XML, and QWeb, this ERP customization not only improves workflow efficiency but also enhances customer communication by providing detailed, professional repair orders and service history reports. The project demonstrates advanced expertise in Odoo development and process automation, marking a significant improvement in auto service management.
-      </p>
-      <div class="flex space-x-4">
-        <a href="https://github.com/BAKARIBUBU" target="_blank" class="px-4 py-2 bg-gray-700 rounded hover:bg-gray-600 transition">View Source Code</a>
-        <a href="../contact.html" class="px-4 py-2 bg-blue-600 rounded hover:bg-blue-500 transition">Contact Me</a>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-2xl font-bold mb-4">Key Features</h3>
+          <ul class="list-disc pl-6 space-y-3 text-gray-300">
+            <li>Smart Sales-to-Workshop Conversion</li>
+            <li>Automated Vehicle Checklists</li>
+            <li>Dynamic PDF Reporting</li>
+            <li>ERP Module Integration</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold mb-4">Tech Stack</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-blue-900/30 text-blue-400 rounded-full">Odoo 17</span>
+            <span class="px-3 py-1 bg-purple-900/30 text-purple-400 rounded-full">Python</span>
+            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full">QWeb</span>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8">
+        <a href="https://github.com/BAKARIBUBU" class="px-6 py-3 bg-blue-600 hover:bg-blue-500 rounded-lg transition">
+          <i class="fab fa-github mr-2"></i> View Source Code
+        </a>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="mt-20 bg-gray-900/80 py-6">
-    <div class="max-w-7xl mx-auto text-center">
-      <p class="text-gray-500">&copy; 2024 Bakari Bubu. All Rights Reserved.</p>
+  <!-- Same footer as index.html -->
+  <footer class="glass-card border-t border-gray-800 py-12">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <div class="flex space-x-6 justify-center mb-8">
+        <a href="https://linkedin.com/in/bakari-bubu-b3130a1ab" class="text-2xl hover:text-blue-400 transition">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/BAKARIBUBU" class="text-2xl hover:text-purple-400 transition">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://x.com/bakaribubu" class="text-2xl hover:text-blue-400 transition">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+      <p class="text-gray-500">&copy; 2025 Bakari Bubu. Digital Excellence</p>
     </div>
   </footer>
 </body>
