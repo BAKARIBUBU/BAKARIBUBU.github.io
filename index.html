@@ -70,21 +70,23 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="p-6 bg-gray-700/30 rounded-xl backdrop-blur-sm border border-gray-600 hover:border-blue-400 transition-all">
               <h3 class="text-blue-400 mb-3 font-semibold"><i class="fas fa-code mr-2"></i>Technologies</h3>
-              <ul class="space-y-2 text-gray-300">
-                <li class="flex items-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>Python/Odoo</li>
-                <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>JavaScript/React</li>
-                <li class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>PostgreSQL</li>
-                <li class="flex items-center"><span class="w-2 h-2 bg-yellow-500 rounded-full mr-2"></span>Docker</li>
+              <ul class="list-disc list-inside text-gray-300">
+                <li>Next.js 14</li>
+                <li>React</li>
+                <li>MongoDB</li>
+                <li>Tailwind CSS</li>
+                <li>Python/Odoo</li>
               </ul>
             </div>
 
             <div class="p-6 bg-gray-700/30 rounded-xl backdrop-blur-sm border border-gray-600 hover:border-purple-400 transition-all">
               <h3 class="text-purple-400 mb-3 font-semibold"><i class="fas fa-cogs mr-2"></i>Expertise</h3>
-              <ul class="space-y-2 text-gray-300">
-                <li class="flex items-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>ERP Customization</li>
-                <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>Full Stack Development</li>
-                <li class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>System Integration</li>
-                <li class="flex items-center"><span class="w-2 h-2 bg-yellow-500 rounded-full mr-2"></span>CI/CD Pipelines</li>
+              <ul class="list-disc list-inside text-gray-300">
+                <li>ERP Customization</li>
+                <li>Full Stack Development</li>
+                <li>System Integration</li>
+                <li>CI/CD Pipelines</li>
+                <li>Odoo Module Development</li>
               </ul>
             </div>
           </div>
@@ -99,9 +101,8 @@
       <h2 class="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
         Featured Innovations
       </h2>
-
-      <!-- Odoo Project Card -->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Odoo Auto Service System Project Card -->
         <div class="relative group">
           <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl blur opacity-30 group-hover:opacity-50 transition duration-1000"></div>
           <div class="relative bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700 hover:border-blue-400 transition-all h-full">
@@ -111,24 +112,51 @@
               </div>
               <h3 class="text-2xl font-bold">Odoo Auto Service System</h3>
             </div>
-            <p class="text-gray-400 mb-6">Enterprise-grade automotive service management system with seamless ERP integration</p>
+            <p class="text-gray-400 mb-6">Enterprise-grade automotive service management system with seamless ERP integration that converts sales orders into workshop orders, automates vehicle checklists, and generates detailed reports.</p>
             <div class="flex flex-wrap gap-2 mb-6">
               <span class="px-3 py-1 bg-blue-900/30 text-blue-400 rounded-full text-sm">Odoo 17</span>
               <span class="px-3 py-1 bg-purple-900/30 text-purple-400 rounded-full text-sm">Python</span>
               <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">QWeb Reports</span>
             </div>
             <div class="flex space-x-4">
-              <a href="https://github.com/BAKARIBUBU" target="_blank" class="flex items-center px-4 py-2 bg-gray-700 rounded-lg hover:bg-gray-600 transition-all">
-                <i class="fab fa-github mr-2"></i> Source Code
+              <!-- UPDATED: Link to the detailed Odoo project page -->
+              <a href="projects/odoo-auto-service.html" target="_blank" class="flex items-center px-4 py-2 bg-gray-700 rounded-lg hover:bg-gray-600 transition-all">
+                <i class="fas fa-info-circle mr-2"></i> View Details
               </a>
-              <a href="#contact" class="flex items-center px-4 py-2 bg-blue-600 rounded-lg hover:bg-blue-500 transition-all">
-                <i class="fas fa-external-link-alt mr-2"></i> Case Study
+              <a href="https://github.com/BAKARIBUBU" target="_blank" class="flex items-center px-4 py-2 bg-blue-600 rounded-lg hover:bg-blue-500 transition-all">
+                <i class="fab fa-github mr-2"></i> Source Code
               </a>
             </div>
           </div>
         </div>
 
-        <!-- Add other project cards similarly -->
+        <!-- Estate Soko Project Card -->
+        <div class="relative group">
+          <div class="absolute -inset-1 bg-gradient-to-r from-green-600 to-yellow-600 rounded-3xl blur opacity-30 group-hover:opacity-50 transition duration-1000"></div>
+          <div class="relative bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700 hover:border-green-400 transition-all h-full">
+            <div class="flex items-center mb-6">
+              <div class="w-16 h-16 bg-green-500/10 rounded-lg flex items-center justify-center mr-4">
+                <i class="fas fa-home text-3xl text-green-400"></i>
+              </div>
+              <h3 class="text-2xl font-bold">Estate Soko</h3>
+            </div>
+            <p class="text-gray-400 mb-6">A dynamic real estate platform that streamlines property management and market operations with intuitive search, listings, and user-friendly dashboards.</p>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="px-3 py-1 bg-green-900/30 text-green-400 rounded-full text-sm">Full Stack</span>
+              <span class="px-3 py-1 bg-blue-900/30 text-blue-400 rounded-full text-sm">React</span>
+              <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Node.js</span>
+            </div>
+            <div class="flex space-x-4">
+              <!-- UPDATED: Link to the detailed Estate Soko project page -->
+              <a href="projects/estate-soko.html" target="_blank" class="flex items-center px-4 py-2 bg-gray-700 rounded-lg hover:bg-gray-600 transition-all">
+                <i class="fas fa-info-circle mr-2"></i> View Details
+              </a>
+              <a href="https://github.com/BAKARIBUBU/ESTATE-Soko" target="_blank" class="flex items-center px-4 py-2 bg-blue-600 rounded-lg hover:bg-blue-500 transition-all">
+                <i class="fab fa-github mr-2"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
